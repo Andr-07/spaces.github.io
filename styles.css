@@ -1,0 +1,279 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Section styles */
+section {
+    padding: 100px 50px;
+    min-height: 100vh;
+    background-color: #000;
+    /* Установлен черный фон для всех секций */
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://files.cdn-files-a.com/uploads/10129164/2000_676be281ada27.png') no-repeat center center/cover;
+}
+
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.about,
+.contact {
+    background-color: #000;
+    /* Черный фон для секций About и Contact */
+}
+
+.about h2,
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p,
+.contact p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* About section styles */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: #333;
+    /* Сделан фон чуть светлее */
+    border-radius: 15px;
+    /* Плавные границы */
+    padding: 40px;
+    /* Увеличены отступы */
+    margin: 20px;
+    /* Добавлены отступы от внешнего контента */
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+    margin-right: 40px;
+    /* Увеличены отступы справа от картинки */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+    flex: 2;
+    color: #ddd;
+    margin-left: 40px;
+    /* Увеличены отступы слева от текста */
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.about-text hr {
+    border: none;
+    height: 2px;
+    background: #61dafb;
+    width: 60px;
+    margin: 20px 0;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 50px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+/* Контейнер для формы и информации */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Информация слева от формы */
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Стиль для формы */
+.contact-form {
+    flex: 2;
+    width: 100%;
+    max-width: 600px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 48%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: linear-gradient(to right, #333, #444);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #61dafb;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #61dafb;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #4fa3d1;
+}
+
+/* Стиль для карты */
+.map {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Метка карты */
+.map-label {
+    font-size: 1.5rem;
+    color: #61dafb;
+    margin-top: 20px;
+}
